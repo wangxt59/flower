@@ -1,0 +1,96 @@
+2019-07-15 10:28:48.743 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-15 10:28:48.751 logback [restartedMain] INFO  com.wang.web.WebApplication - Started WebApplication in 5.57 seconds (JVM running for 6.337)
+2019-07-15 10:28:48.753 logback [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
+2019-07-15 10:28:48.754 logback [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
+2019-07-15 10:28:48.754 logback [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6b2037a3
+2019-07-15 10:28:48.754 logback [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Starting application com.wang.web.WebApplication with URLs [file:/D:/idea_workspace/web/target/classes/]
+2019-07-15 10:29:08.485 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-07-15 10:29:08.485 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2019-07-15 10:29:08.496 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-15 10:29:08.496 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2019-07-15 10:29:08.518 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fbtgw/", parameters={}
+2019-07-15 10:29:08.525 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:08.526 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2019-07-15 10:29:08.527 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-07-15 10:29:08.532 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-07-15 10:29:08.534 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-15 10:29:08.712 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-07-15 10:29:08.716 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-07-15 10:29:13.673 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2019-07-15 10:29:13.673 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.lang.String com.wang.controller.IndexController.defaultPage()
+2019-07-15 10:29:13.723 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-07-15 10:29:13.724 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name 'pages/login', model {}
+2019-07-15 10:29:13.725 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [pages/login.html]
+2019-07-15 10:29:13.729 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:13.737 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-07-15 10:29:13.737 logback [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/light-bootstrap-dashboard.css", parameters={}
+2019-07-15 10:29:13.739 logback [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.740 logback [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.746 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/demo.css", parameters={}
+2019-07-15 10:29:13.746 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+2019-07-15 10:29:13.748 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.748 logback [http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.749 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/pe-icon-7-stroke.css", parameters={}
+2019-07-15 10:29:13.749 logback [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/685fd913f1e14aebad0cc9d3713ee469.css", parameters={}
+2019-07-15 10:29:13.750 logback [http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.750 logback [http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.846 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:13.846 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:13.847 logback [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:13.851 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+2019-07-15 10:29:13.852 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:13.999 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery-ui.min.js", parameters={}
+2019-07-15 10:29:14.000 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.070 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.071 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/bootstrap.min.js", parameters={}
+2019-07-15 10:29:14.072 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.074 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.136 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.136 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.validate.min.js", parameters={}
+2019-07-15 10:29:14.137 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.138 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.143 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.174 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/moment.min.js", parameters={}
+2019-07-15 10:29:14.175 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.199 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/bootstrap-datetimepicker.js", parameters={}
+2019-07-15 10:29:14.200 logback [http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.210 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.211 logback [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/bootstrap-selectpicker.js", parameters={}
+2019-07-15 10:29:14.212 logback [http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.214 logback [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.214 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/bootstrap-checkbox-radio-switch-tags.js", parameters={}
+2019-07-15 10:29:14.215 logback [http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.226 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.229 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/chartist.min.js", parameters={}
+2019-07-15 10:29:14.229 logback [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.231 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/bootstrap-notify.js", parameters={}
+2019-07-15 10:29:14.232 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.233 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.235 logback [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.236 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.236 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.239 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/sweetalert2.js", parameters={}
+2019-07-15 10:29:14.240 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.241 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.257 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery-jvectormap.js", parameters={}
+2019-07-15 10:29:14.258 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.282 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/aa743e8f448a4792bad10d201a7080f6.js", parameters={}
+2019-07-15 10:29:14.282 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.307 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.308 logback [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.bootstrap.wizard.min.js", parameters={}
+2019-07-15 10:29:14.308 logback [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.309 logback [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.333 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/bootstrap-table.js", parameters={}
+2019-07-15 10:29:14.333 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.334 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/picture/full-screen-image-2.jpg", parameters={}
+2019-07-15 10:29:14.335 logback [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/picture/full-screen-image-1.jpg", parameters={}
+2019-07-15 10:29:14.336 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.336 logback [http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.345 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/zn7gbfwfmp4ua6ar0hcolq.ttf", parameters={}
+2019-07-15 10:29:14.345 logback [http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.348 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.355 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.356 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/hgo13k-tfspn0qi1sfdufacwcynf_cdxxwclxiixg1c.ttf", parameters={}
+2019-07-15 10:29:14.357 logback [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.359 logback [http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.359 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff2", parameters={}

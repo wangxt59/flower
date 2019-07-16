@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--主体-->
+<div>
+    <input id="ajax1">
+    <button id="ajaxb1"  type="button" onclick="ajax1()">ajax1提交</button>
+    <div>
+        <input id="ajax2" >
+        <button id="ajaxb2" type="button" onclick="ajax2()">ajax2提交</button>
+    </div>
+    <div>
+        <input id="ajax3" >
+        <button id="ajaxb3" type="button" onclick="ajax3()">ajax3提交</button>
+    </div>
+</div>
+<form id="adduser" >
+    <label for='uname'>用户名</label>：<input type='text' name='uname' id='uname'><br>
+    <label for='mobileIpt'>手机号：</label><input type='text' name='mobileIpt' id='mobileIpt'><br>
+    <label>生日：</label><input type='text' name='birthday' id="birthday"><br>
+    <label>商品：</label><input type='text' name='goods' ><br>
+    <label>商品：</label><input type='text' name='goods' ><br>
+    <label>商品：</label><input type='text' name='goods' ><br>
+    <label>商品：</label><input type='text' name='goods' ><br>
+    <label>商品：</label><input type='text' name='goods' ><br>
+    <input type='button' value='ajaxtext' onclick='ajaxtext()'>
+    <input type='button' value='ajaxJson1' onclick='ajaxJson1()'>
+    <input type='button' value='serialize1' onclick='serialize1()'>
+    <input type='button' value='提交4' onclick='addUser()'>
+    <input type='button' value='提交5' onclick='addUser()'>
+</form>
+
+
+
+<br>
+<div id="show">ssss</div>
+<div id="myManu"></div>
+
+</body>
+<script>
+    function serialize1(){
+        var show=document.getElementById("show");
+        var re=document.getElementById("myManu");
+        var data_serialize= $("#adduser").serialize();
+        console.log("data_serialize："+data_serialize);
+        var data_serializeArray= $("input[name='goods']").serializeArray();
+        console.log("data_serializeArray："+data_serializeArray);
+        var param=$.param(data_serializeArray);
+        console.log('param:'+param);
+        var jss=JSON.stringify(data_serialize);
+        console.log('jss:'+jss);
+        for(i=0;i<data_serializeArray.length;i++){
+            console.log(data_serializeArray[i]);
+        }
+
+
+
+        $.ajax({
+            url:'ajax/ajaxSerialize',
+            data:data_serialize,
+            type:'post',
+            contentType:"application/json",
+            dataType:'text',
+            success:function(msg){
+
+                console.log(show.innerHTML);
+                show.innerHTML=msg;
+            }
+        })
+    }
+    function ajaxJson1(){
+        var user = {
+            uname:$("#uname").val(),
+            mobileIpt:$("#mobileIpt").val(),
+            birthday:$("#birthday").val()
+        };
+        console.log(user);
+        $.ajax({
+            url:'ajax/ajaxJson',
+            data:JSON.stringify(user),
+            type:'post',
+            contentType:"application/json",
+            dataType:'text',
+            success:function(msg){
+                var show=document.getElementById("show");
+                console.log(show.innerHTML);
+                show.innerHTML=msg;
+            }
+        })
+    }
+    function ajaxtext(){
+        var user = {
+            uname:$("#uname").val(),
+            mobileIpt:$("#mobileIpt").val(),
+            birthday:$("#birthday").val()
+        };
+        console.log(user);
+        $.ajax({
+            url:'ajax/ajaxtext',
+            data:user,
+            type:'post',
+            dataType:'json',
+//            dataType:'text',
+            success:function(msg){
+                console.log(msg.text);
+                var html=msg;
+                $("#show").appendChild(html);
+            }
+        })
+    }
+    function json() {
+        var user = {
+            uname:"json"
+        };
+        window.location="json/getjson.do";
+    }
+    function addUser() {
+        var user = {
+            uname: $("#uname").val(),
+            mobileIpt: $("#mobileIpt").val(),
+            birthday: $("#birthday").val()
+        };
+        $.ajax({
+            url: 'action1',
+            data: user,
+            type: 'post',
+            dataType: 'text',
+            success: function (data) {
+                if (data.code == '1') {
+                    alert('添加成功');
+                } else {
+                    alert('添加失败')
+                }
+            }
+        })
+    }
+</script>
+</html>

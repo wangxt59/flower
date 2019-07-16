@@ -1,0 +1,70 @@
+2019-07-15 10:55:56.895 logback [restartedMain] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'com.wang.web'. Automatic @Repository and @Entity scanning is enabled.
+2019-07-15 10:55:57.783 logback [restartedMain] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: D:\maven-repository\org\springframework\boot\spring-boot\2.1.4.RELEASE\spring-boot-2.1.4.RELEASE.jar
+2019-07-15 10:55:57.783 logback [restartedMain] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: D:\maven-repository\org\springframework\boot\spring-boot\2.1.4.RELEASE\spring-boot-2.1.4.RELEASE.jar
+2019-07-15 10:55:57.783 logback [restartedMain] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2019-07-15 10:55:57.862 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-07-15 10:55:57.971 logback [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-15 10:55:57.971 logback [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1861 ms
+2019-07-15 10:55:57.976 logback [restartedMain] INFO  com.wang.DruidDB.DruidConfiguration - init Druid Servlet Configuration 
+2019-07-15 10:55:57.991 logback [restartedMain] INFO  com.wang.filter.FilterConfig - 注册过滤器, 过滤器name: KeywordHandleFilter, 过滤器order: 3, 过滤器过滤url: [/v1/query/keyword]
+2019-07-15 10:55:58.035 logback [restartedMain] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: KeywordHandleFilter urls=[/v1/query/keyword], filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], shirFilter urls=[/*], createShiroFilter urls=[/*]
+2019-07-15 10:55:58.036 logback [restartedMain] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: statViewServlet urls=[/druid/*], dispatcherServlet urls=[/]
+2019-07-15 10:55:58.053 logback [restartedMain] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2019-07-15 10:55:58.054 logback [restartedMain] DEBUG o.s.b.w.s.f.OrderedHiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2019-07-15 10:55:58.054 logback [restartedMain] INFO  com.wang.filter.KeywordHandleFilter - KeywordHandleFilter初始化
+2019-07-15 10:55:58.054 logback [restartedMain] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2019-07-15 10:55:58.055 logback [restartedMain] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2019-07-15 10:55:58.399 logback [restartedMain] ERROR c.alibaba.druid.filter.FilterManager - load filter error, filter not found : logback
+2019-07-15 10:55:59.109 logback [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/webSocketServer, /sockjs/webSocketServer/**] in 'webSocketHandlerMapping'
+2019-07-15 10:55:59.124 logback [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/webSocketServer/**] in 'stompWebSocketHandlerMapping'
+2019-07-15 10:55:59.213 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.web.WebApplication: {}
+2019-07-15 10:55:59.214 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.controller.AjaxController: {}
+2019-07-15 10:55:59.214 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.controller.HelloController: {}
+2019-07-15 10:55:59.214 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.controller.IndexController: {}
+2019-07-15 10:55:59.214 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.controller.JsonController: {}
+2019-07-15 10:55:59.214 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.controller.SolrController: {}
+2019-07-15 10:55:59.216 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 2 message handler methods found on class com.wang.controller.WebSocketAction: {public com.wang.websocket_stomp.ServerMessage com.wang.controller.WebSocketAction.sub()={[/subscribeTest],messageType=[SUBSCRIBE]}, public com.wang.websocket_stomp.ServerMessage com.wang.controller.WebSocketAction.sendDemo(com.wang.websocket_stomp.ClientMessage)={[/sendTest],messageType=[MESSAGE]}}
+2019-07-15 10:55:59.218 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.rabbitmq.MyMQ: {}
+2019-07-15 10:55:59.218 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class com.wang.shiro.ShiroAction: {}
+2019-07-15 10:55:59.220 logback [restartedMain] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 0 message handler methods found on class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController: {}
+2019-07-15 10:55:59.272 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-15 10:55:59.347 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-15 10:55:59.408 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+2019-07-15 10:55:59.422 logback [restartedMain] INFO  com.wang.interceptor.WebConfig - 配置静态资源所在目录
+2019-07-15 10:55:59.424 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /static/**] in 'resourceHandlerMapping'
+2019-07-15 10:55:59.436 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-15 10:55:59.465 logback [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [template/index.html]
+2019-07-15 10:55:59.522 logback [restartedMain] DEBUG o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2019-07-15 10:55:59.909 logback [restartedMain] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [template/]] resolved to file path [D:\idea_workspace\web\target\classes\template]
+2019-07-15 10:56:00.069 logback [restartedMain] DEBUG o.s.b.d.livereload.LiveReloadServer - Starting live reload server on port 35729
+2019-07-15 10:56:00.070 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-07-15 10:56:02.199 logback [messageContainer-1] ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2073)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2047)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2027)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:403)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1787)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1768)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1195)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1041)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1218)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:471)
+	... 11 common frames omitted

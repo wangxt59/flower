@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wang.dao.MRgmapingMapper">
+  <resultMap id="BaseResultMap" type="com.wang.entity.MRgmaping">
+    <id column="rg_id" jdbcType="VARCHAR" property="rgId" />
+    <result column="r_id" jdbcType="VARCHAR" property="rId" />
+    <result column="pgroup_id" jdbcType="VARCHAR" property="pgroupId" />
+    <result column="create_date" jdbcType="DATE" property="createDate" />
+    <result column="update_date" jdbcType="DATE" property="updateDate" />
+    <result column="operator_id" jdbcType="VARCHAR" property="operatorId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    rg_id, r_id, pgroup_id, create_date, update_date, operator_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from m_rgmaping
+    where rg_id = #{rgId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from m_rgmaping
+    where rg_id = #{rgId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.wang.entity.MRgmaping">
+    insert into m_rgmaping (rg_id, r_id, pgroup_id, 
+      create_date, update_date, operator_id
+      )
+    values (#{rgId,jdbcType=VARCHAR}, #{rId,jdbcType=VARCHAR}, #{pgroupId,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=DATE}, #{updateDate,jdbcType=DATE}, #{operatorId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wang.entity.MRgmaping">
+    insert into m_rgmaping
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="rgId != null">
+        rg_id,
+      </if>
+      <if test="rId != null">
+        r_id,
+      </if>
+      <if test="pgroupId != null">
+        pgroup_id,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="operatorId != null">
+        operator_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="rgId != null">
+        #{rgId,jdbcType=VARCHAR},
+      </if>
+      <if test="rId != null">
+        #{rId,jdbcType=VARCHAR},
+      </if>
+      <if test="pgroupId != null">
+        #{pgroupId,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=DATE},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=DATE},
+      </if>
+      <if test="operatorId != null">
+        #{operatorId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wang.entity.MRgmaping">
+    update m_rgmaping
+    <set>
+      <if test="rId != null">
+        r_id = #{rId,jdbcType=VARCHAR},
+      </if>
+      <if test="pgroupId != null">
+        pgroup_id = #{pgroupId,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=DATE},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=DATE},
+      </if>
+      <if test="operatorId != null">
+        operator_id = #{operatorId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where rg_id = #{rgId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wang.entity.MRgmaping">
+    update m_rgmaping
+    set r_id = #{rId,jdbcType=VARCHAR},
+      pgroup_id = #{pgroupId,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=DATE},
+      update_date = #{updateDate,jdbcType=DATE},
+      operator_id = #{operatorId,jdbcType=VARCHAR}
+    where rg_id = #{rgId,jdbcType=VARCHAR}
+  </update>
+</mapper>

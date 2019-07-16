@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="key" name="key" value="">
+<input id="value" name="value" value="">
+<button href="" onclick="quary()">查询</button>
+<br>
+<#list list as user>
+    id：${user.id}<br>
+    item_cat_name：${user.item_cat_name}<br>
+    item_name: ${user.item_name}<br>
+    item_desc: ${user.item_desc}<br>
+    item_price: ${user.item_price}<br>
+    <hr>
+</#list>
+</body>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script>
+    function quary() {
+        var map = {
+            key: $("#key").val(),
+            value: $("#value").val()
+        };
+
+        $.ajax({
+            url: 'solr/query',
+            data: JSON.stringify(map),
+            type: 'post',
+            dataType: 'html',
+            contentType:"application/json",
+            success: function (data) {
+            }
+        })
+    }
+</script>
+</html>

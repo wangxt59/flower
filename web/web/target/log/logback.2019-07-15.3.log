@@ -1,0 +1,61 @@
+2019-07-15 10:29:14.360 logback [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.365 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.365 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.363 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.362 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/d-6iyplofoccackzxwxsokcwcynf_cdxxwclxiixg1c.ttf", parameters={}
+2019-07-15 10:29:14.369 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/picture/full-screen-image-3.jpg", parameters={}
+2019-07-15 10:29:14.369 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.370 logback [http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.372 logback [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/picture/full-screen-image-4.jpg", parameters={}
+2019-07-15 10:29:14.373 logback [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.381 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/fullcalendar.min.js", parameters={}
+2019-07-15 10:29:14.381 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.382 logback [http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.383 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.397 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/light-bootstrap-dashboard.js", parameters={}
+2019-07-15 10:29:14.397 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.398 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.405 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.407 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.sharrre.js", parameters={}
+2019-07-15 10:29:14.417 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/demo.js", parameters={}
+2019-07-15 10:29:14.417 logback [http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.420 logback [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.423 logback [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.425 logback [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.432 logback [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.434 logback [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.437 logback [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:14.468 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/mask.png", parameters={}
+2019-07-15 10:29:14.469 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.470 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2019-07-15 10:29:14.470 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-07-15 10:29:14.470 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-07-15 10:29:14.471 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-15 10:29:14.479 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/img/full-screen-image-1.jpg", parameters={}
+2019-07-15 10:29:14.479 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:14.480 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2019-07-15 10:29:14.480 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-07-15 10:29:14.481 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-07-15 10:29:14.481 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-15 10:29:14.489 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-15 10:29:14.489 logback [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jul 15 10:29:14 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-07-15 10:29:14.490 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-15 10:29:14.490 logback [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jul 15 10:29:14 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-07-15 10:29:14.538 logback [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-07-15 10:29:14.539 logback [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-07-15 10:29:16.999 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/userLogin", parameters={masked}
+2019-07-15 10:29:16.999 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.web.servlet.ModelAndView com.wang.shiro.ShiroAction.userLogin(java.lang.String,java.lang.String)
+2019-07-15 10:29:17.021 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-07-15 10:29:17.021 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name 'pages/login', model {}
+2019-07-15 10:29:17.021 logback [http-nio-8080-exec-10] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [pages/login.html]
+2019-07-15 10:29:17.021 logback [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2019-07-15 10:29:17.108 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/img/full-screen-image-1.jpg", parameters={}
+2019-07-15 10:29:17.109 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/template/", "/"]
+2019-07-15 10:29:17.110 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2019-07-15 10:29:17.110 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-07-15 10:29:17.110 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-07-15 10:29:17.111 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-15 10:29:17.113 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-15 10:29:17.113 logback [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jul 15 10:29:17 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-07-15 10:29:17.113 logback [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-07-15 10:29:46.954 logback [MessageBroker-1] INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
