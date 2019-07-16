@@ -9,10 +9,10 @@ import javax.persistence.*;
 @Table(name="tb_label")
 public class Label {
     @Id
-    @GeneratedValue
+//    @GeneratedValue
     private String id;//
     @Column
-    private String labelname;//标签名称
+    private String labelName;//标签名称
     @Column
     private String state;//状态
     @Column
@@ -23,8 +23,8 @@ public class Label {
     private String recommend;//是否推荐
     public Label(){}
 
-    public Label(String labelname, String state, Long count, Long fans, String recommend) {
-        this.labelname = labelname;
+    public Label(String labelName, String state, Long count, Long fans, String recommend) {
+        this.labelName = labelName;
         this.state = state;
         this.count = count;
         this.fans = fans;
@@ -40,11 +40,11 @@ public class Label {
     }
 
     public String getLabelName() {
-        return labelname;
+        return labelName;
     }
 
-    public void setLabelName(String labelname) {
-        this.labelname = labelname;
+    public void setLabelName(String labelName) {
+        this.labelName = labelName;
     }
 
     public String getState() {

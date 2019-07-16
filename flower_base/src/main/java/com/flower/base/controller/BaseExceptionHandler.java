@@ -16,5 +16,6 @@ public class BaseExceptionHandler {
     public Result error(Exception e) {
         e.printStackTrace();
         return new Result(false, StatusCode.ERROR, e.getMessage());
+
     }
 }
