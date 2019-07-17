@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4dc251e8-2b21-47bd-8c17-657b65c9f67d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/controller/LabelController.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/controller/LabelController.class" />
-      <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/dao/LabelDao.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/dao/LabelDao.class" />
-      <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/pojo/Label.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/pojo/Label.class" />
-      <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/service/LabelService.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/service/LabelService.class" />
-      <change beforePath="$PROJECT_DIR$/flower_common/target/classes/com/flower/common/entity/Result.class" afterPath="$PROJECT_DIR$/flower_common/target/classes/com/flower/common/entity/Result.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -441,7 +436,7 @@
       <updated>1563170862327</updated>
       <workItem from="1563170865731" duration="16101000" />
       <workItem from="1563187518747" duration="1499000" />
-      <workItem from="1563243224551" duration="11996000" />
+      <workItem from="1563243224551" duration="12124000" />
     </task>
     <task id="LOCAL-00001" summary="4">
       <created>1563255801465</created>
@@ -492,11 +487,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563346337070</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="7">
+      <created>1563346347104</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563346347104</updated>
+    </task>
+    <task id="LOCAL-00009" summary="8">
+      <created>1563346382374</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563346382374</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29596000" />
+    <option name="totallyTimeSpent" value="29724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -544,7 +553,9 @@
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="6" />
-    <option name="LAST_COMMIT_MESSAGE" value="6" />
+    <MESSAGE value="7" />
+    <MESSAGE value="8" />
+    <option name="LAST_COMMIT_MESSAGE" value="8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
