@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc251e8-2b21-47bd-8c17-657b65c9f67d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/flower_recruit/flower_recruit.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/controller/LabelController.java" afterPath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/controller/LabelController.java" />
-      <change beforePath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/dao/LabelDao.java" afterPath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/dao/LabelDao.java" />
-      <change beforePath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/pojo/Label.java" afterPath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/pojo/Label.java" />
-      <change beforePath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/service/LabelService.java" afterPath="$PROJECT_DIR$/flower_base/src/main/java/com/flower/base/service/LabelService.java" />
       <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/controller/LabelController.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/controller/LabelController.class" />
       <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/dao/LabelDao.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/dao/LabelDao.class" />
       <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/pojo/Label.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/pojo/Label.class" />
       <change beforePath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/service/LabelService.class" afterPath="$PROJECT_DIR$/flower_base/target/classes/com/flower/base/service/LabelService.class" />
-      <change beforePath="$PROJECT_DIR$/flower_common/src/main/java/com/flower/common/entity/Result.java" afterPath="$PROJECT_DIR$/flower_common/src/main/java/com/flower/common/entity/Result.java" />
       <change beforePath="$PROJECT_DIR$/flower_common/target/classes/com/flower/common/entity/Result.class" afterPath="$PROJECT_DIR$/flower_common/target/classes/com/flower/common/entity/Result.class" />
-      <change beforePath="$PROJECT_DIR$/flower_parent.iml" afterPath="$PROJECT_DIR$/flower_parent.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -453,7 +441,7 @@
       <updated>1563170862327</updated>
       <workItem from="1563170865731" duration="16101000" />
       <workItem from="1563187518747" duration="1499000" />
-      <workItem from="1563243224551" duration="11885000" />
+      <workItem from="1563243224551" duration="11957000" />
     </task>
     <task id="LOCAL-00001" summary="4">
       <created>1563255801465</created>
@@ -476,11 +464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563258296373</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="6">
+      <created>1563346296144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563346296144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29485000" />
+    <option name="totallyTimeSpent" value="29557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -527,7 +522,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="4" />
     <MESSAGE value="5" />
-    <option name="LAST_COMMIT_MESSAGE" value="5" />
+    <MESSAGE value="6" />
+    <option name="LAST_COMMIT_MESSAGE" value="6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
