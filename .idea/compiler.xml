@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flower_base" />
         <module name="flower_common" />
+        <module name="flower_recruit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="flower_base" target="1.8" />
       <module name="flower_common" target="1.8" />
       <module name="flower_parent" target="1.8" />
+      <module name="flower_recruit" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

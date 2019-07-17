@@ -11,6 +11,6 @@ import org.springframework.stereotype.Repository;
  * JpaSpecificationExecutor用于做复杂的条件查询
  */
 //@Repository
-public interface LabelDao extends JpaRepository<Label, String>{
+public interface LabelDao extends JpaRepository<Label, String>,JpaSpecificationExecutor<Label>{
 
 }
