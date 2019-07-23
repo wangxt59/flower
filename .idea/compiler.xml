@@ -16,6 +16,7 @@
       <module name="flower_common" target="1.8" />
       <module name="flower_parent" target="1.8" />
       <module name="flower_recruit" target="1.8" />
+      <module name="flower_recruit1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

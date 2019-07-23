@@ -1,5 +1,6 @@
 package com.flower.recruit.pojo;
 
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;

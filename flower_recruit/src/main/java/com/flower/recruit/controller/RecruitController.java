@@ -1,23 +1,16 @@
 package com.flower.recruit.controller;
-import java.util.List;
-import java.util.Map;
+
 
 import com.flower.common.entity.PageResult;
 import com.flower.common.entity.Result;
 import com.flower.common.entity.StatusCode;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.flower.recruit.pojo.Recruit;
 import com.flower.recruit.service.RecruitService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
 
-
+import java.util.Map;
 /**
  * recruit控制器层
  * @author Administrator
@@ -93,7 +86,7 @@ public class RecruitController {
 	public Result update(@RequestBody Recruit recruit, @PathVariable String id ){
 		recruit.setId(id);
 		recruitService.update(recruit);
-		return new Result(true,StatusCode.OK,"修改成功");
+		return new Result(true, StatusCode.OK,"修改成功");
 	}
 	
 	/**
