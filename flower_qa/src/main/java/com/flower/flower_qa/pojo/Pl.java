@@ -15,12 +15,9 @@ public class Pl implements Serializable{
 
 	@Id
 	private String problemid;//问题ID
-
-
-	
+	@Id
 	private String labelid;//标签ID
 
-	
 	public String getProblemid() {
 		return problemid;
 	}
