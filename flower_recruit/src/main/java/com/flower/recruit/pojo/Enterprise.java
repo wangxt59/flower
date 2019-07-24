@@ -1,5 +1,6 @@
 package com.flower.recruit.pojo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -15,20 +16,29 @@ public class Enterprise implements Serializable{
 
 	@Id
 	private String id;//id
-
-
-	
+	@Column(columnDefinition="COMMENT '企业名称'")
 	private String name;//企业名称
+	@Column(columnDefinition="COMMENT '企业简介'")
 	private String summary;//企业简介
+	@Column(columnDefinition="COMMENT '企业地址'")
 	private String address;//企业地址
+	@Column(columnDefinition="COMMENT '标签列表'")
 	private String labels;//标签列表
+	@Column(columnDefinition="COMMENT '企业位置坐标 经度，纬度'")
 	private String coordinate;//企业位置坐标 经度，纬度
+	@Column(columnDefinition="COMMENT '是否热门 0：非热门 1：热门'")
 	private String ishot;//是否热门 0：非热门 1：热门
+	@Column
 	private String logo;//logo
+	@Column(columnDefinition="COMMENT '职位数'")
 	private Integer jobcount;//职位数
+	@Column
 	private String url;//url
+	@Column
 	private java.util.Date createTime;//create_time
+	@Column
 	private java.util.Date updateTime;//update_time
+
 
 	
 	public String getId() {

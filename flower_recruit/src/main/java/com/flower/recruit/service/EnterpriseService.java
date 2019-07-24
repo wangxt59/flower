@@ -39,6 +39,15 @@ public class EnterpriseService {
 	@Autowired
 	private IdWorker idWorker;
 
+
+	/**
+	 * 热门企业列表
+	 * @return
+	 */
+	public List<Enterprise> hotlist(){
+		return enterpriseDao.findByIshot("1");
+	}
+
 	/**
 	 * 查询全部列表
 	 * @return

@@ -1,8 +1,42 @@
-.idea
-*.iml
 flower_base/.mvn
 flower_base/target
 flower_common/.mvn
 flower_common/target
 flower_recruit/.mvn
 flower_recruit/target
+flower_qa/.mvn
+flower_qa/target
+
+
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/

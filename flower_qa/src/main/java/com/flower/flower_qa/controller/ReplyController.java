@@ -1,52 +1,36 @@
-package com.flower.recruit.controller;
-
+package com.flower.flower_qa.controller;
 
 import com.flower.common.entity.PageResult;
 import com.flower.common.entity.Result;
 import com.flower.common.entity.StatusCode;
-import com.flower.recruit.pojo.Recruit;
-import com.flower.recruit.service.RecruitService;
+import com.flower.flower_qa.pojo.Reply;
+import com.flower.flower_qa.service.ReplyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Map;
 /**
- * recruit控制器层
+ * reply控制器层
  * @author Administrator
  *
  */
 @RestController
 @CrossOrigin
-@RequestMapping("/recruit")
-public class RecruitController {
+@RequestMapping("/reply")
+public class ReplyController {
 
 	@Autowired
-	private RecruitService recruitService;
-
-
-
-	/**
-	 * 最新职位列表
-	 * @return
-	 */
-	@RequestMapping(value="/search/newlist",method= RequestMethod.GET)
-	public Result newlist(){
-		return new Result(true,StatusCode.OK,"查询成功",recruitService.newlist());
-	}
-	@RequestMapping(value="/search/recommend",method= RequestMethod.GET)
-	public Result recommend(){
-		List<Recruit> list =recruitService.findTop4ByStateOrderByCreatetimeDesc("2");
-		return new Result(true,StatusCode.OK,"查询成功",list);
-	}
+	private ReplyService replyService;
+	
+	
 	/**
 	 * 查询全部数据
 	 * @return
 	 */
 	@RequestMapping(method= RequestMethod.GET)
 	public Result findAll(){
-		return new Result(true, StatusCode.OK,"查询成功",recruitService.findAll());
+		return new Result(true, StatusCode.OK,"查询成功",replyService.findAll());
 	}
 	
 	/**
@@ -56,7 +40,7 @@ public class RecruitController {
 	 */
 	@RequestMapping(value="/{id}",method= RequestMethod.GET)
 	public Result findById(@PathVariable String id){
-		return new Result(true,StatusCode.OK,"查询成功",recruitService.findById(id));
+		return new Result(true,StatusCode.OK,"查询成功",replyService.findById(id));
 	}
 
 
@@ -69,8 +53,8 @@ public class RecruitController {
 	 */
 	@RequestMapping(value="/search/{page}/{size}",method=RequestMethod.POST)
 	public Result findSearch(@RequestBody Map searchMap , @PathVariable int page, @PathVariable int size){
-		Page<Recruit> pageList = recruitService.findSearch(searchMap, page, size);
-		return  new Result(true,StatusCode.OK,"查询成功",  new PageResult<Recruit>(pageList.getTotalElements(), pageList.getContent()) );
+		Page<Reply> pageList = replyService.findSearch(searchMap, page, size);
+		return  new Result(true,StatusCode.OK,"查询成功",  new PageResult<Reply>(pageList.getTotalElements(), pageList.getContent()) );
 	}
 
 	/**
@@ -80,28 +64,28 @@ public class RecruitController {
      */
     @RequestMapping(value="/search",method = RequestMethod.POST)
     public Result findSearch( @RequestBody Map searchMap){
-        return new Result(true,StatusCode.OK,"查询成功",recruitService.findSearch(searchMap));
+        return new Result(true,StatusCode.OK,"查询成功",replyService.findSearch(searchMap));
     }
 	
 	/**
 	 * 增加
-	 * @param recruit
+	 * @param reply
 	 */
 	@RequestMapping(method=RequestMethod.POST)
-	public Result add(@RequestBody Recruit recruit  ){
-		recruitService.add(recruit);
+	public Result add(@RequestBody Reply reply  ){
+		replyService.add(reply);
 		return new Result(true,StatusCode.OK,"增加成功");
 	}
 	
 	/**
 	 * 修改
-	 * @param recruit
+	 * @param reply
 	 */
 	@RequestMapping(value="/{id}",method= RequestMethod.PUT)
-	public Result update(@RequestBody Recruit recruit, @PathVariable String id ){
-		recruit.setId(id);
-		recruitService.update(recruit);
-		return new Result(true, StatusCode.OK,"修改成功");
+	public Result update(@RequestBody Reply reply, @PathVariable String id ){
+		reply.setId(id);
+		replyService.update(reply);
+		return new Result(true,StatusCode.OK,"修改成功");
 	}
 	
 	/**
@@ -110,7 +94,7 @@ public class RecruitController {
 	 */
 	@RequestMapping(value="/{id}",method= RequestMethod.DELETE)
 	public Result delete(@PathVariable String id){
-		recruitService.deleteById(id);
+		replyService.deleteById(id);
 		return new Result(true,StatusCode.OK,"删除成功");
 	}
 	

@@ -1,14 +1,14 @@
-server:
-  port: 9090
-spring:
-  application:
-    name: flower-recruit #ָ��������
-  datasource:
+server: 
+  port: 9001
+spring: 
+  application:  
+    name: flower_qa #指定服务名
+  datasource:  
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/flower_recruit?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/flower_qa?characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: root
-  jpa:
+  jpa: 
     database: mysql
     generate-ddl: true
     show-sql: true

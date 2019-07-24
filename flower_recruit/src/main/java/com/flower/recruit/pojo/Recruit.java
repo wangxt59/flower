@@ -1,6 +1,7 @@
 package com.flower.recruit.pojo;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -16,22 +17,33 @@ public class Recruit implements Serializable{
 
 	@Id
 	private String id;//id
-
-
-	
+	@Column(columnDefinition="COMMENT '招聘职位'")
 	private String jobname;//招聘职位
+	@Column(columnDefinition="COMMENT '薪资范围'")
 	private String salary;//薪资范围
+	@Column(columnDefinition="COMMENT '经验要求'")
 	private String condition;//经验要求
+	@Column(columnDefinition="COMMENT '学历要求'")
 	private String education;//学历要求
+	@Column(columnDefinition="COMMENT '任职方式'")
 	private String type;//任职方式
+	@Column(columnDefinition="COMMENT '办公地址'")
 	private String address;//办公地址
+	@Column(columnDefinition="COMMENT '企业ID'")
 	private String eid;//企业ID
+	@Column
 	private java.util.Date updatetime;//updatetime
+	@Column
 	private java.util.Date createtime;//发布日期
+	@Column(columnDefinition="COMMENT '状态0：关闭 1:开启 2：推荐'")
 	private String state;//状态0：关闭 1:开启 2：推荐
+	@Column(columnDefinition="COMMENT '原网址'")
 	private String url;//原网址
+	@Column(columnDefinition="COMMENT '标签'")
 	private String label;//标签
+	@Column(columnDefinition="COMMENT '职位描述'")
 	private String content1;//职位描述
+	@Column(columnDefinition="COMMENT '职位要求！'")
 	private String content2;//职位要求
 
 	

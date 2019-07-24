@@ -32,6 +32,23 @@ public class RecruitService {
 	@Autowired
 	private IdWorker idWorker;
 
+
+
+	/**
+	 * 最新职位列表
+	 * @return
+	 */
+	public List<Recruit> newlist(){
+		return recruitDao.findTop12ByStateNotOrderByCreatetimeDesc("0");
+	}
+	/**
+	 * 根据状态查询
+	 * @param state
+	 * @return
+	 */
+	public List<Recruit> findTop4ByStateOrderByCreatetimeDesc(String state){
+		return recruitDao.findTop4ByStateOrderByCreatetimeDesc(state);
+	}
 	/**
 	 * 查询全部列表
 	 * @return
