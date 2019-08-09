@@ -19,6 +19,7 @@ public class ArticleSearchController {
 
     @RequestMapping(value="/search/{keywords}/{page}/{size}",method=  RequestMethod.GET)
     public Result findByTitleLike(@PathVariable String keywords, @PathVariable int page, @PathVariable int size){
+        System.out.println("keywords:"+keywords+"\n"+"page:"+page+"\n"+"size:"+size);
         Page<Article> articlePage = articleSearchService.findByTitleLike(keywords,page,size);
         return new Result(true, StatusCode.OK, "查询成功", new PageResult<Article>(articlePage.getTotalElements(),  articlePage.getContent()));
     }

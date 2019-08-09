@@ -17,6 +17,10 @@
         <module>flower_gathering</module>
         <module>flower_spit</module>
         <module>flower_search</module>
+        <module>flower_resource</module>
+        <module>flower_rabbitmq</module>
+        <module>flower_user</module>
+        <module>flower_message</module>
     </modules>
 
 
