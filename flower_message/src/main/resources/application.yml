@@ -1,0 +1,10 @@
+server:
+  port: 9559
+spring:
+  rabbitmq:
+    host: 192.168.99.100
+
+appid : 1400242689
+appkey : 26a139ab7d7b3004406f6fd4d9ac0823
+templateId : 7839
+smsSign : "腾讯云"
