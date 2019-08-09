@@ -1,9 +1,0 @@
-server:
-  port: 9559
-  servlet:
-    context-path: /conf
-spring:
-  mvc:
-    static-path-pattern: /**
-  resources:
-    static-locations: classpath:/public/,classpath:/static/
