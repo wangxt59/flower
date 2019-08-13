@@ -1,12 +1,18 @@
-flower_base/.mvn
-flower_base/target
-flower_common/.mvn
-flower_common/target
-flower_recruit/.mvn
-flower_recruit/target
-flower_qa/.mvn
+#flower_base/.mvn
+#flower_base/target
+#flower_common/target
+#flower_recruit/.mvn
+#flower_recruit/target
+#flower_qa/.mvn
 flower_qa/target
 **/.mvn
+**/.gitignore
+**/HELP.md
+**/mvnw
+**/mvnw.cmd
+**/target
+
+
 
 
 
