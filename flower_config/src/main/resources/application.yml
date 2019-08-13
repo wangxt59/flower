@@ -1,0 +1,39 @@
+spring:
+  application:
+  name: tensquare©\config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/wangxt59/flower-config.git
+          ignore-local-ssh-settings: true
+          private-key:  99bYaH0OLgU7BKQHNh1Ogl/ewuV5Xj5kgWCjq99wQptXTZ7XKx5bArlRLADixYnz
+                          K4CYIi23lmyksik4herCxQZwsozt0/aGPi9mePM3Uzgx6lC/DUlD45X3mTM0jZdg
+                          8nwo+BhcKUaG7ilVCcfc/FOYRNVJuYD9kviCuTsKuRIetkWwV9lIVO/RCga5ntcB
+                          6VhDFhI70oXupQQrcCO+6wmGdQYTegt+9lP/0T6JBV4O4vNmuHrZxDBJpoeDiInL
+                          Rnu2KBzo7DGF7iznonONK4mK2I9jPXm0LUkIYNRN8m61WUdHcyrVWpNfMGfQEDsr
+                          aY6WeVCaqpGlEQmc6ThCNWkVL7y+YlHwIJvk602U8Ctl81vdQhEyFb16Fow/1++s
+                          vE5GQpb0uYnpSdxZ4rlOYJCnnQTZUGD9RLJGu9dBKP12vYFxt3igbo5OPQOFFpY8
+                          plYkUD54VNfGjgYWOq9+7v3B8/6307+EqiZsZoFRUO8WeZz4n4ZxRGhD0B21KXLk
+                          MZPP1VYksZL/qHlYv6bdJX2JmOARwNjgPY64eSXIEdkr3zU/fM4yXyi2+eMYPKO1
+                          BrVrvnoluFQQnjdThzOjt8WKAyyOYu4a4V3BIO+oznpQBD/Y1TQ7MSwvvfG7v6gy
+                          J22uYo6CCMU0cXkoFiAbtloPJF4Gn4IclJ8FZU6/QmbRSkN8Uz82YxCIeL0eJj/N
+                          yzYtUe9IpJ8IABBG2MKi6yaFZNmlQnT/N2puIs9bI/+nK4c4gZFQAg8mHLaSP86t
+                          ytcOU4l1ibNHXzx7llH5jIWkgL4Xhj+O+yaNRbwxJzFtHS2QZhL6QfDGACWU7i+Q
+                          bmR+rysXKF2/168Go268ZXOo5MojSkXm3BaAyJttsJDfhZjlqzupOmVxe0b35jIM
+                          FqjP2oxOByw0esy/V6IAtW+/0QOJOJWKZ4Zkz7FuaL+mNmZGip3HhI2c6DN0IB5l
+                          sdBJbTumbqiOC5+QL7ChfMScgTbqF5VNKHs8JUeeIcTS7TCkJsjja+A9awQ1uNxQ
+                          qQh5/HZIvWNdxDcHGczcvwqh25ra7Bqdm48D18hO1Gi14fem4zAWKRjyOBT50X1J
+                          zbjIQ6UV9UIOG9Ekq+FSQ0Hy1cZvGul0Jq6NgK4UUbLEm948eNyavU1auUcr0F0b
+                          uBpXguiOLkpduu6tMoFy1se6f9p21RKdPjJJ3CS4A+qsyJI5zfsm76WlivaS0NRi
+                          tXmYP3/vYSBeSdpRDc1acci8g5JxLzBUyF1ltfuHufYcWHZ0xlbu7vfTiMkZb0y2
+                          H4sB2hy6Za+JHuiO3XrTm69b88Y583losQyln+vpifnbjhRJ4jMwEeXPkh+Dw/+S
+                          8gNTRH29CIkoKzGimOk2nwbSOebjWx7vaV/lMpX6LTh3Fmzzu2Wa8UyWO+1voFCc
+                          RRpS7YolFpq2kaikrS5E1IOm1uoLYoI0WISeCIVG21CJMQ0rkGTa6sixSNDC/Wdm
+                          IFVnwUwts/8XRD0wr0fSycudDnUsitOXHA85QnhZJSH3JJ0FAx4TM7uJZ9l3BbWR
+                          VJ/qLH7LvkWY2Vvidz4DfZ0heSXuUQNU/doTpeNnwlrQqxlFsKYVhzWlBFkpU6kn
+
+#          username: wangxt59
+#          password: wxt199559
+server:
+  port: 12000
