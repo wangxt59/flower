@@ -1,8 +1,8 @@
 server: 
-  port: 9001
+  port: 9002
 spring: 
   application:  
-    name: flower_qa #指定服务名
+    name: flower-qa #指定服务名
   datasource:  
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/flower_qa?characterEncoding=utf-8&serverTimezone=GMT%2B8
@@ -18,3 +18,13 @@ spring:
               auto: update
               dialect: org.hibernate.dialect.MySQL5InnoDBDialect
               format_sql: true
+
+eureka:
+ client:
+  service-url:
+    defaultZone: http://localhost:6868/eureka/
+ instance:
+   prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true

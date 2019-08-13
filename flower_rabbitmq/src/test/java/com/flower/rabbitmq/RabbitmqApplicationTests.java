@@ -8,20 +8,20 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = RabbitmqApplicationTests.class)
 public class RabbitmqApplicationTests {
 
-	@Autowired
-	private RabbitTemplate rabbitTemplate;
+//	@Autowired(required = false)
+//	private RabbitTemplate rabbitTemplate;
 
 	@Test
 	public void contextLoads() {
 
 	}
-	@Test
-	public void testSend() {
-		rabbitTemplate.convertAndSend("itcast","我要红包");
-	}
+//	@Test
+//	public void testSend() {
+//		rabbitTemplate.convertAndSend("itcast","我要红包");
+//	}
 
 
 }

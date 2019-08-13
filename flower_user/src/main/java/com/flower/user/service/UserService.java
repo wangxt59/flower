@@ -9,7 +9,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -32,11 +34,53 @@ public class UserService {
     @Autowired
     private IdWorker idWorker;
 
+    @Autowired
+    BCryptPasswordEncoder encoder;
+
 
     @Autowired
     private RedisTemplate redisTemplate;
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+
+    /**
+     * 更新关注数
+     *
+     * @param x
+     */
+    @Transactional
+    public void incFollowcount(String userid, int x) {
+        userDao.incFollowcount(userid, x);
+    }
+
+
+    /**
+     * 更新粉丝数
+     *
+     * @param x
+     */
+    @Transactional
+    public void incFanscount(String userid, int x) {
+        userDao.incFanscount(userid, x);
+    }
+
+
+    /**
+     * 根据手机号和密码查询用户
+     *
+     * @param mobile
+     * @param password
+     * @return
+     */
+    public User findByMobileAndPassword(String mobile, String password) {
+        User user = userDao.findByPhone(mobile);
+        if (user != null && encoder.matches(password, user.getPassword())) {
+            return user;
+        } else {
+            return null;
+        }
+    }
 
 
     /**
@@ -55,13 +99,16 @@ public class UserService {
         if (!syscode.equals(code)) {
             throw new RuntimeException("验证码输入不正确");
         }
-        user.setId(idWorker.nextId());
+        user.setId("" + idWorker.nextId());
         user.setFollowcount(0);//关注数
         user.setFanscount(0);//粉丝数
         user.setOnline(0);//在线时长
         user.setCreateDate(new Date());//注册日期
         user.setUpdateDate(new Date());//更新日期
         user.setLastDate(new Date());//最后登陆日期
+        //密码加密
+        String newpassword = encoder.encode(user.getPassword());//加密后的密码
+        user.setPassword(newpassword);
         userDao.save(user);
     }
 

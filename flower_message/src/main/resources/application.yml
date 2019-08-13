@@ -3,8 +3,16 @@ server:
 spring:
   rabbitmq:
     host: 192.168.99.100
+tencent:
+ sms:
+  appid: 1400242689
+  appkey: 26a139ab7d7b3004406f6fd4d9ac0823
+  templateId: 393812
+  smsSign: "QIANSHUO"
 
-appid : 1400242689
-appkey : 26a139ab7d7b3004406f6fd4d9ac0823
-templateId : 7839
-smsSign : "腾讯云"
+eureka:
+ client:
+  service-url:
+   defaultZone: http://localhost:6868/eureka
+ instance:
+   prefer-ip-address: true

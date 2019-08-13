@@ -25,6 +25,15 @@ public class LabelController {
 //    @Qualifier("labelService")
     private LabelService labelService;
 
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public Result eurekaTest() {
+        System.out.println("微服务测试");
+        return new Result(true, StatusCode.OK, "微服务测试",null);
+    }
+
+
+
     /**
      * 查询全部列表
      *

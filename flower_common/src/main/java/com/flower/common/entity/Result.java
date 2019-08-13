@@ -6,6 +6,11 @@ public class Result<T> {
     private String message;//返回信息
     private T data;// 返回数据
 
+
+    public Result() {
+
+    }
+
     public Result(boolean flag, Integer code, String message, T data) {
         super();
         this.flag = flag;
