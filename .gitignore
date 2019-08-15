@@ -1,9 +1,9 @@
-#flower_base/.mvn
-#flower_base/target
-#flower_common/target
-#flower_recruit/.mvn
-#flower_recruit/target
-#flower_qa/.mvn
+flower_base/.mvn
+flower_base/target
+flower_common/target
+flower_recruit/.mvn
+flower_recruit/target
+flower_qa/.mvn
 flower_qa/target
 **/.mvn
 **/.gitignore
@@ -47,3 +47,13 @@ build/
 
 ### VS Code ###
 .vscode/
+demo/src/main/resources/db/
+demo/src/main/resources/static/
+demo/src/main/resources/templates/
+demo/src/test/resources/
+flower_common/src/main/resources/
+flower_common/src/test/
+flower_message/src/main/resources/static/
+flower_message/src/main/resources/templates/
+flower_resource/src/main/resources/templates/
+flower_user/src/main/java/com/flower/user/utils/
